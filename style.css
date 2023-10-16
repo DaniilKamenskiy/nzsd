@@ -1,5 +1,12 @@
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        padding-top: 70px;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #444444;
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .count-input {
