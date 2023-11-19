@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<INPUT type="button" value="Window" OnClick="alert('Уходи отсюда');">
+	<INPUT type="button" value="Screen" OnClick="PrintScreen();">
+	<INPUT type="button" value="Navigator" OnClick=alert(navigator.appVersion);>
+	<INPUT type="button" value="Location" OnClick=alert(location.href);>
 
+
+	<SCRIPT type="text/javaScript">
+		function PrintScreen()
+		{	
+			alert("Разрешение: " + screen.width +"x" + screen.height);
+			if(window.confirm("Вывести разрешение в окно бразера?"))
+			<!--вывод в окно браузера-->
+			document.write("Разрешение: " + screen.width +"x" + screen.height);
+		}
+		<!--Функция отступа второго абзаца -->
+		function Padd ()
+		{
+			document.getElementById("element_id").style.marginRight = "3cm";
+			document.getElementById("element_id").style.textIndent = "2.5cm";
+		}
+		<!--Возвращает отступ обратно -->
+		function Reset()	
+		{
+			document.getElementById("element_id").style.marginRight = "1.5cm";
+			document.getElementById("element_id").style.marginRight = "0.7cm";
+		}
+
+
+
+
+		function toggleCellStyle(cell) {
+				if (cell.classList.contains("table-cell")) {
+					cell.className = "table-cell-alternate";
+				} 
+				else
+				{
+					cell.className = "table-cell";
+				}
+				}
+
+
+
+		<!--Функция меняет слои нижний на верхний,верхний на нижний
+		function ChangeEl()
+		{
+			var TopEl = document.getElementsByName("name1")[0];
+			var BottomEl = document.getElementsByName("name3")[0];
+			var Buff = BottomEL.style.zIndex;
+			BottomEl.style.zIndex = TopEl.style.zIndex;
+			TopEl.style.zIndex = Buff.style.zIndex;
+		}
+		
+
+		function swapLayers() {
+			var topImage = document.getElementsByName("name1")[0];
+			var bottomImage = document.getElementsByName("name3")[0];
+			var tempZIndex = topImage.style.zIndex;
+			topImage.style.zIndex = bottomImage.style.zIndex;
+			bottomImage.style.zIndex = tempZIndex;
+		}
+
+	</SCRIPT>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>История одного гения</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+
+</head>
+<body>
+&nbsp;<div class="text">
+    <main>
+      <h1>Каменсский Д.В.</h1>
+        <p onMouseOver="this.className='mystyle'" onMouseOut="this.className='defstyle'">Академик Каменский Даниил Викторович - выдающийся ученый, исследователь и новатор в области физики и астрономии. Его исследования и открытия внесли значительный вклад в понимание фундаментальных законов Вселенной и природы космоса.</p>
+<p id = "element_id" OnMouseOver="Padd()" OnMouseOut="Reset()">
+Даниил Каменский родился в небольшом городке на севере России, где и начал свое образование. Благодаря своему трудолюбию и любознательности, он быстро привлек внимание преподавателей и научных руководителей, которые распознали его талант и рекомендовали продолжить обучение в одном из ведущих университетов страны.</p>
+<p>
+После получения докторской степени, Даниил Каменский решил продолжить свою научную карьеру за рубежом. Он переехал в США, где получил место в знаменитом Калифорнийском технологическом институте (Caltech). Здесь он работал над рядом проектов, связанных с изучением темной энергии и темной материи, а также с теорией струн и квантовой гравитацией.
+</p>
+<p>
+В течение своей научной карьеры, академик Каменский публиковал многочисленные статьи и книги, которые стали основой для многих будущих исследований в области астрофизики и космологии. Его работа также привела к разработке новых методов наблюдения и анализа данных, что позволило ученым глубже понять структуру и эволюцию Вселенной.
+</p>
+<p>
+Академик Каменский также известен своей активной общественной деятельностью и поддержкой молодых ученых. Он является основателем и председателем нескольких научных организаций, а также активным участником международных</p>
+    <h2>Дата последней модификации сайта:</h2> 
+		<script type="text/javascript">
+		alert(document.lastModified);
+		</script>
+  <input type="button" value="Скрыть" onClick="name2.style.visibility='hidden'">
+  <input type="button" value="Показать" onClick="name2.style.visibility='visible'">
+  <input type="button" value="Поменять слои местами" onClick="ChangeEl();">
+  <button onclick="ChangeEl()">Hide Middle Image</button>
+					<!--------------------------Таблицы--------------------------->
+</div>
+<HR>
+<table>
+<tr>
+<td class="table-cell" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 11</td>
+<td class="table-cell" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 12</td>
+<td class="table-cell-alternate" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 13</td>
+</tr>
+
+
+<tr>
+<td class="table-cell" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 21</td>
+<td class="table-cell-alternate" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 22</td>
+<td class="table-cell-alternate" onmouseover="toggleCellStyle(this)"
+onmouseout="toggleCellStyle(this)">Ячейка 23</td>
+</tr>
+</table>
+
+	<footer>
+		<img src = "C:\Users\Даниил\Downloads\Photo1.jpg" name = "name1" class = "image1" height='300'>
+		<img src = "C:\Users\Даниил\Downloads\Photo2.jpg" name = "name2" class = "image2" height='300'>
+		<img src = "C:\Users\Даниил\Downloads\Photo3.jpg" name = "name3" class = "image3" height='300'>
+	</footer>
+    </main>		
+	<!-------------КНОПКИ----------->
+  
+	
+  
+</body>
+						
+</html>
