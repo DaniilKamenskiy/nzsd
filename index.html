@@ -44,11 +44,11 @@
 
 		<!--Функция меняет слои нижний на верхний,верхний на нижний
 		function ChangeEl() {
-			var topImage = document.getElementsByName("name1")[0];
+			var TopEl = document.getElementsByName("name1")[0];
 			var bottomImage = document.getElementsByName("name3")[0];
-			var tempZIndex = topImage.style.zIndex;
-			topImage.style.zIndex = bottomImage.style.zIndex;
-			bottomImage.style.zIndex = tempZIndex;
+			var Buff = TopEl.style.zIndex;
+			TopEl.style.zIndex = bottomImage.style.zIndex;
+			bottomImage.style.zIndex = Buff;
 		}
 
 	</SCRIPT>
