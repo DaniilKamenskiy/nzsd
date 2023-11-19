@@ -43,7 +43,7 @@
 
 
 		<!--Функция меняет слои нижний на верхний,верхний на нижний
-		function swapLayers() {
+		function ChangeEl() {
 			var topImage = document.getElementsByName("name1")[0];
 			var bottomImage = document.getElementsByName("name3")[0];
 			var tempZIndex = topImage.style.zIndex;
@@ -81,9 +81,10 @@
 		<script type="text/javascript">
 		alert(document.lastModified);
 		</script>
+	<!-------------КНОПКИ----------->
   <input type="button" value="Скрыть" onClick="name2.style.visibility='hidden'">
   <input type="button" value="Показать" onClick="name2.style.visibility='visible'">
-  <input type="button" value="Поменять слои местами" onClick="swapLayers();">
+  <input type="button" value="Поменять слои местами" onClick="ChangeEl();">
 					<!--------------------------Таблицы--------------------------->
 </div>
 <HR>
@@ -114,10 +115,6 @@ onmouseout="toggleCellStyle(this)">Ячейка 23</td>
 		<img src = "image\Photo3.jpg" name = "name3" style="z-index: 1;" class = "image3" height='300'>
 	</footer>
     </main>		
-	<!-------------КНОПКИ----------->
-  
-	
-  
 </body>
 						
 </html>
